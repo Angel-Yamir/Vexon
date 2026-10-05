@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vexon | Ropa deportiva de alto rendimiento</title>
+  <meta name="description" content="Vexon — ropa y accesorios deportivos diseñados para rendir al máximo. Running, training y lifestyle en una sola marca." />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo-mark.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">
+        <img src="assets/icons/logo-mark.svg" alt="" width="34" height="34" />
+        VEX<span>ON</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#inicio" class="is-active">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="promociones.html">Promociones</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="wishlistHeaderBtn" aria-label="Favoritos" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Carrito de compras" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================= HERO ============================= -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Nueva colección 2026</p>
+          <h1>Entrena sin <em>límites</em>. Viste Vexon.</h1>
+          <p>
+            Prendas técnicas de alto rendimiento, diseñadas para acompañarte desde el
+            primer sprint hasta la última repetición. Comodidad, estilo y resistencia
+            en cada fibra.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#productos" class="btn btn-primary">
+              Ver colección
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="promociones.html" class="btn btn-outline">Ofertas de temporada</a>
+          </div>
+
+          <div class="hero-stats reveal">
+            <div>
+              <strong>+10K</strong>
+              <span>Atletas Vexon</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Valoración media</span>
+            </div>
+            <div>
+              <strong>30 días</strong>
+              <span>Devoluciones gratis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glow-ring"></div>
+          <div class="glow-ring"></div>
+          <div class="hero-mark">
+            <img src="assets/icons/logo-mark.svg" alt="Símbolo Vexon" />
+          </div>
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8-5.1-4.7 6.9-.8L12 2Z"/></svg>
+            Hecho para rendir
+          </div>
+        </div>
+      </div>
+
+      <a href="#categorias" class="scroll-cue">
+        <span class="line"></span>
+        Scroll
+      </a>
+    </section>
+
+    <!-- ============================= MARQUEE ============================= -->
+    <div class="marquee">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>Rendimiento <span>Comodidad <span>Estilo <span>Vexon <span>Rendimiento <span>Comodidad <span>Estilo <span>Vexon </span></span></span></span></span></span></span></span>
+      </div>
+    </div>
+
+    <!-- ============================= CATEGORÍAS ============================= -->
+    <section id="categorias" class="section categories">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Compra por categoría</p>
+            <h2>Equípate para tu disciplina</h2>
+          </div>
+          <p>Desde sesiones de running hasta días de descanso activo: cada categoría está pensada para un tipo de movimiento.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card reveal">
+            <h3>Hombre</h3>
+            <img class="category-icon" src="assets/images/product-jacket.svg" alt="" />
+            <a href="#productos" class="text-link">
+              Ver colección
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <article class="category-card reveal">
+            <h3>Mujer</h3>
+            <img class="category-icon" src="assets/images/product-leggings.svg" alt="" />
+            <a href="#productos" class="text-link">
+              Ver colección
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <article class="category-card reveal">
+            <h3>Training</h3>
+            <img class="category-icon" src="assets/images/product-sneakers.svg" alt="" />
+            <a href="#productos" class="text-link">
+              Ver colección
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PRODUCTOS ============================= -->
+    <section id="productos" class="section products">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">Más vendidos</p>
+            <h2>Productos destacados</h2>
+          </div>
+          <p>Una selección de nuestras piezas favoritas, pensadas para el día a día dentro y fuera del gimnasio.</p>
+        </div>
+
+        <div class="filter-tabs reveal" id="filterTabs">
+          <button type="button" class="is-active" data-filter="Todos">Todos</button>
+          <button type="button" data-filter="Running">Running</button>
+          <button type="button" data-filter="Training">Training</button>
+          <button type="button" data-filter="Lifestyle">Lifestyle</button>
+          <button type="button" data-filter="Yoga">Yoga</button>
+          <button type="button" data-filter="Mujer">Mujer</button>
+          <button type="button" data-filter="Hombre">Hombre</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <!-- Producto 1 -->
+          <article class="product-card reveal" data-category="Running">
+            <div class="product-media">
+              <span class="product-tag">Running</span>
+              <img src="assets/images/product-tshirt.svg" alt="Camiseta Performance Pro" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Camiseta Performance Pro</h3>
+              <p>Tejido técnico de secado rápido y transpirable para entrenamientos de alta intensidad.</p>
+              <div class="product-price"><span>$39.990</span></div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Producto 2 -->
+          <article class="product-card reveal" data-category="Training">
+            <div class="product-media">
+              <span class="product-tag">Training</span>
+              <img src="assets/images/product-shorts.svg" alt="Shorts Flex Training" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Shorts Flex Training</h3>
+              <p>Ligeros, con malla interior y bolsillo para llaves. Ideales para día de pierna.</p>
+              <div class="product-price"><span>$34.990</span></div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Producto 3 -->
+          <article class="product-card reveal" data-category="Lifestyle">
+            <div class="product-media">
+              <span class="product-tag">Lifestyle</span>
+              <span class="product-discount">-20%</span>
+              <img src="assets/images/product-hoodie.svg" alt="Hoodie Street Power" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Hoodie Street Power</h3>
+              <p>Sudadera oversize de algodón premium, perfecta para el pre y post entreno.</p>
+              <div class="product-price">
+                <span>$59.990</span>
+                <span class="old-price">$74.990</span>
+              </div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Producto 4 -->
+          <article class="product-card reveal" data-category="Mujer">
+            <div class="product-media">
+              <span class="product-tag">Mujer</span>
+              <img src="assets/images/product-leggings.svg" alt="Leggings Sculpt" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Leggings Sculpt</h3>
+              <p>Compresión media, control de abdomen y costuras planas antirozaduras.</p>
+              <div class="product-price"><span>$44.990</span></div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Producto 5 -->
+          <article class="product-card reveal" data-category="Hombre">
+            <div class="product-media">
+              <span class="product-tag">Hombre</span>
+              <img src="assets/images/product-jacket.svg" alt="Chaqueta Windbreak" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Chaqueta Windbreak</h3>
+              <p>Cortavientos resistente al agua, ligera y plegable para entrenar al aire libre.</p>
+              <div class="product-price"><span>$69.990</span></div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Producto 6 -->
+          <article class="product-card reveal" data-category="Running">
+            <div class="product-media">
+              <span class="product-tag">Running</span>
+              <img src="assets/images/product-sneakers.svg" alt="Zapatillas Velocity X" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Zapatillas Velocity X</h3>
+              <p>Amortiguación reactiva y suela de alta tracción para cada tipo de pisada.</p>
+              <div class="product-price"><span>$89.990</span></div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Producto 7 -->
+          <article class="product-card reveal" data-category="Yoga">
+            <div class="product-media">
+              <span class="product-tag">Yoga</span>
+              <span class="product-discount">-20%</span>
+              <img src="assets/images/product-top.svg" alt="Top Deportivo Core" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Top Deportivo Core</h3>
+              <p>Soporte medio con tejido elástico de cuatro direcciones y tiras cruzadas.</p>
+              <div class="product-price">
+                <span>$29.990</span>
+                <span class="old-price">$37.990</span>
+              </div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Producto 8 -->
+          <article class="product-card reveal" data-category="Training">
+            <div class="product-media">
+              <span class="product-tag">Training</span>
+              <img src="assets/images/product-bag.svg" alt="Mochila Trainer 25L" />
+              <button class="product-wishlist" type="button" aria-label="Agregar a favoritos">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Mochila Trainer 25L</h3>
+              <p>Compartimento para calzado y espacio térmico para tu botella de entreno.</p>
+              <div class="product-price"><span>$54.990</span></div>
+              <button class="btn btn-primary btn-block btn-add">
+                Añadir al carrito
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="products-footer">
+          <a href="promociones.html" class="btn btn-outline">Ver todas las promociones</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= BENEFICIOS ============================= -->
+    <section id="beneficios" class="section benefits">
+      <div class="container">
+        <div class="benefits-grid">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3V7Z"/><path d="M14 10h4l3 3v3h-7v-6Z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg>
+            </div>
+            <h3>Envío gratis</h3>
+            <p>En compras superiores a $50.000 a todo el país.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2.1 21 5l-.5 4.5-3.5 2.4-3.5-2.4L13 5l4-2.9Z"/><path d="M3 10h4l2 9H5l-2-9Z"/><path d="M9 19h12"/></svg>
+            </div>
+            <h3>Calidad garantizada</h3>
+            <p>Materiales técnicos probados para alto rendimiento.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v5h5"/><path d="M20 20v-5h-5"/><path d="M5.5 9A7 7 0 0 1 19 12M18.5 15A7 7 0 0 1 5 12"/></svg>
+            </div>
+            <h3>Devoluciones fáciles</h3>
+            <p>30 días para cambios y devoluciones sin costo.</p>
+          </div>
+
+          <div class="benefit-card reveal">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/></svg>
+            </div>
+            <h3>Pago 100% seguro</h3>
+            <p>Transacciones encriptadas en cada compra.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= PROMO ============================= -->
+    <section id="promo" class="section-tight promo">
+      <div class="container">
+        <div class="promo-grid">
+          <div class="promo-card is-accent reveal">
+            <span class="promo-tag">Temporada</span>
+            <h3>Hasta 40% OFF en la colección Training</h3>
+            <p>Equípate para tus próximas rutinas con descuentos exclusivos por tiempo limitado.</p>
+            <a href="promociones.html" class="btn btn-dark">Ver promociones</a>
+          </div>
+
+          <div class="promo-card is-dark reveal">
+            <span class="promo-tag">Vexon</span>
+            <h3>Conoce la historia detrás de la marca</h3>
+            <p>Descubre quiénes somos, nuestros valores y por qué el rendimiento empieza en la actitud.</p>
+            <a href="nosotros.html" class="btn btn-outline">Sobre nosotros</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= NEWSLETTER ============================= -->
+    <section id="newsletter" class="section newsletter">
+      <div class="container">
+        <div class="newsletter-box reveal">
+          <div class="newsletter-copy">
+            <h2>Únete al equipo Vexon</h2>
+            <p>Suscríbete y recibe un 10% de descuento en tu primera compra, además de acceso anticipado a lanzamientos.</p>
+          </div>
+
+          <div>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico" />
+              <button type="submit" class="btn btn-primary">Suscribirme</button>
+            </form>
+            <p class="newsletter-note" id="newsletterNote">Sin spam. Puedes darte de baja cuando quieras.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="brand">
+            <img src="assets/icons/logo-mark.svg" alt="" width="34" height="34" />
+            VEX<span>ON</span>
+          </a>
+          <p>Ropa y accesorios deportivos diseñados para acompañar tu rendimiento, dentro y fuera de la cancha.</p>
+          <div class="social-row">
+            <a class="icon-btn" href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="icon-btn" href="#" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 3h2.3c.3 1.8 1.6 3.3 3.7 3.5v2.4c-1.4 0-2.7-.4-3.8-1.2v6.6a4.9 4.9 0 1 1-4.9-4.9c.3 0 .6 0 .9.1v2.5a2.4 2.4 0 1 0 1.7 2.3V3Z"/></svg>
+            </a>
+            <a class="icon-btn" href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 21v-7h2.3l.4-2.7h-2.7V9.4c0-.8.2-1.3 1.4-1.3h1.4V5.7c-.6-.1-1.5-.2-2.4-.2-2.4 0-4 1.5-4 4.1v2.2H8.5V14h2.4v7h3.6Z"/></svg>
+            </a>
+            <a class="icon-btn" href="#" aria-label="X / Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l7.3 9.2L4.4 20h2.1l5.9-5.8L17 20h3l-7.6-9.6L19.6 4h-2.1l-5.4 5.3L7 4H4Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="#categorias">Hombre</a></li>
+            <li><a href="#categorias">Mujer</a></li>
+            <li><a href="#productos">Training</a></li>
+            <li><a href="promociones.html">Promociones</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Compañía</h4>
+          <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="nosotros.html">Sostenibilidad</a></li>
+            <li><a href="contacto.html">Trabaja con nosotros</a></li>
+            <li><a href="contacto.html">Prensa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="contacto.html">Envíos</a></li>
+            <li><a href="contacto.html">Devoluciones</a></li>
+            <li><a href="contacto.html">Guía de tallas</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Vexon. Todos los derechos reservados.</p>
+        <div class="footer-legal">
+          <a href="contacto.html">Términos</a>
+          <a href="contacto.html">Privacidad</a>
+          <a href="contacto.html">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---------- Header: estado al hacer scroll ----------
+    const header = document.getElementById('header');
+    const onScroll = () => {
+      header.classList.toggle('is-scrolled', window.scrollY > 10);
+    };
+    document.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // ---------- Menú móvil ----------
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    const closeMenu = () => {
+      navToggle.classList.remove('is-open');
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('is-open');
+      navToggle.classList.toggle('is-open', isOpen);
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    // ---------- Animación al hacer scroll (reveal) ----------
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      revealEls.forEach((el) => observer.observe(el));
+    } else {
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+
+    // ---------- Filtro de productos ----------
+    const filterTabs = document.getElementById('filterTabs');
+    const productCards = document.querySelectorAll('#productGrid .product-card');
+
+    filterTabs.addEventListener('click', (e) => {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+
+      filterTabs.querySelectorAll('button').forEach((b) => b.classList.remove('is-active'));
+      btn.classList.add('is-active');
+
+      const filter = btn.dataset.filter;
+      productCards.forEach((card) => {
+        const match = filter === 'Todos' || card.dataset.category === filter;
+        card.style.display = match ? '' : 'none';
+      });
+    });
+
+    // ---------- Favoritos ----------
+    document.querySelectorAll('.product-wishlist').forEach((btn) => {
+      btn.addEventListener('click', () => btn.classList.toggle('is-active'));
+    });
+
+    // ---------- Carrito (feedback visual) ----------
+    const cartCount = document.getElementById('cartCount');
+    let totalItems = 0;
+
+    document.querySelectorAll('.btn-add').forEach((btn) => {
+      const originalHTML = btn.innerHTML;
+      btn.addEventListener('click', () => {
+        totalItems += 1;
+        cartCount.textContent = totalItems;
+
+        btn.innerHTML = 'Añadido ✓';
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.innerHTML = originalHTML;
+          btn.disabled = false;
+        }, 1200);
+      });
+    });
+
+    // ---------- Newsletter ----------
+    const newsletterForm = document.getElementById('newsletterForm');
+    const newsletterNote = document.getElementById('newsletterNote');
+
+    newsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      newsletterNote.textContent = '¡Listo! Revisa tu correo para confirmar la suscripción.';
+      newsletterNote.classList.add('is-success');
+      newsletterForm.reset();
+    });
+
+    // ---------- Año dinámico ----------
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
