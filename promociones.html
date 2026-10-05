@@ -13,21 +13,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/promociones.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo-mark.svg">
 </head>
 
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="VEXON, inicio"><span
-        class="brand-mark">V</span><span>VEXON</span></a>
-    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"
-      aria-controls="main-nav"><span></span><span></span></button>
-    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-      <a href="index.html">Inicio</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a class="active" href="#promociones" aria-current="page">Promociones</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <a class="header-cta" href="#promociones">Descubrir ofertas <span>↗</span></a>
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <img src="assets/icons/logo-mark.svg" alt="" width="34" height="34" />
+        VEX<span>ON</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="promociones.html" class="is-active">Promociones</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="wishlistHeaderBtn" aria-label="Favoritos" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 8.6c0 4-4.2 6.9-8.3 10.5-.3.3-.7.3-1 0C7.4 15.5 3.2 12.6 3.2 8.6 3.2 5.5 5.6 3.5 8.2 3.5c1.6 0 3 .8 3.8 2 .8-1.2 2.2-2 3.8-2 2.6 0 5 2 5 5.1Z"/></svg>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Carrito de compras" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8V6a3 3 0 1 1 6 0v2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -166,18 +184,8 @@
         href="#promociones">Promociones</a><a href="mailto:hola@vexon.com">Contacto</a></div><span class="copyright">©
       2025 VEXON. ALL RIGHTS RESERVED.</span>
   </footer>
+  <script src="scripts/header.js"></script>
   <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const navigation = document.querySelector('.main-nav');
-    menuButton.addEventListener('click', () => {
-      const open = menuButton.getAttribute('aria-expanded') !== 'true';
-      menuButton.setAttribute('aria-expanded', String(open));
-      navigation.classList.toggle('open', open);
-    });
-    navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      navigation.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-    }));
     document.querySelector('#copy-coupon').addEventListener('click', async event => {
       const button = event.currentTarget;
       const code = document.querySelector('#coupon-code').textContent;
